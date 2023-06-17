@@ -45,7 +45,7 @@ struct StockListRow: View {
                 .foregroundColor(.gray)
         }
         .padding()
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.black)
     }
 }

@@ -12,6 +12,7 @@
 		8648C1462A3D5FBB00DC8271 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8648C1452A3D5FBB00DC8271 /* Preview Assets.xcassets */; };
 		8648C14D2A3D608000DC8271 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8648C14C2A3D608000DC8271 /* StockModel.swift */; };
 		8648C14F2A3D60B300DC8271 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8648C14E2A3D60B300DC8271 /* StockListView.swift */; };
+		8648C1512A3D61C600DC8271 /* StockListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8648C1502A3D61C600DC8271 /* StockListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		8648C1452A3D5FBB00DC8271 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8648C14C2A3D608000DC8271 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		8648C14E2A3D60B300DC8271 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
+		8648C1502A3D61C600DC8271 /* StockListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				8648C13E2A3D5FB900DC8271 /* StockList_SwiftUIApp.swift */,
 				8648C14E2A3D60B300DC8271 /* StockListView.swift */,
+				8648C1502A3D61C600DC8271 /* StockListRow.swift */,
 				8648C14C2A3D608000DC8271 /* StockModel.swift */,
 				8648C1422A3D5FBB00DC8271 /* Assets.xcassets */,
 				8648C1442A3D5FBB00DC8271 /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8648C14F2A3D60B300DC8271 /* StockListView.swift in Sources */,
+				8648C1512A3D61C600DC8271 /* StockListRow.swift in Sources */,
 				8648C13F2A3D5FB900DC8271 /* StockList_SwiftUIApp.swift in Sources */,
 				8648C14D2A3D608000DC8271 /* StockModel.swift in Sources */,
 			);

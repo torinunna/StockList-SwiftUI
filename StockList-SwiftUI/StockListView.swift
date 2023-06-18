@@ -14,10 +14,11 @@ struct StockListView: View {
     var body: some View {
         NavigationView {
             List($list) { $item in
-                StockListRow(stock: $item)
-                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                    .listRowSeparator(.hidden)
-                    .frame(height: 80)
+                NavigationLink {
+                    StockDetailView(stock: $item)
+                } label: {
+                    StockListRow(stock: $item)
+                }
             }
             .listStyle(.plain)
             .navigationTitle("Stock List")

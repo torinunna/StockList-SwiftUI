@@ -20,6 +20,7 @@ struct StockListView: View {
                     } label: {
                         EmptyView()
                     }
+                    .opacity(0.0)
                     StockListRow(stock: $item)
                 }
                 .listRowInsets(EdgeInsets())

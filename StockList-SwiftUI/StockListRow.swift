@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StockListRow: View {
     
-    var stock: StockModel
+    @Binding var stock: StockModel
     
     var body: some View {
         HStack {
@@ -51,7 +51,7 @@ struct StockListRow: View {
 
 struct StockListRow_Previews: PreviewProvider {
     static var previews: some View {
-        StockListRow(stock: StockModel.list[0])
+        StockListRow(stock: .constant(StockModel.list[0]))
             .preferredColorScheme(.dark)
     }
 }

@@ -46,12 +46,12 @@ struct StockListRow: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.black)
     }
 }
 
 struct StockListRow_Previews: PreviewProvider {
     static var previews: some View {
         StockListRow(stock: StockModel.list[0])
+            .preferredColorScheme(.dark)
     }
 }

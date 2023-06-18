@@ -29,5 +29,6 @@ struct StockDetailView: View {
 struct StockDetailView_Previews: PreviewProvider {
     static var previews: some View {
         StockDetailView(stock: .constant(StockModel.list[0]))
+            .preferredColorScheme(.dark)
     }
 }

@@ -20,12 +20,12 @@ struct StockListView: View {
                 .frame(height: 80)
         }
         .listStyle(.plain)
-        .background(.black)
     }
 }
 
 struct StockListView_Previews: PreviewProvider {
     static var previews: some View {
         StockListView()
+            .preferredColorScheme(.dark)
     }
 }

@@ -14,11 +14,16 @@ struct StockListView: View {
     var body: some View {
         NavigationView {
             List($list) { $item in
-                NavigationLink {
-                    StockDetailView(stock: $item)
-                } label: {
+                ZStack {
+                    NavigationLink {
+                        StockDetailView(stock: $item)
+                    } label: {
+                        EmptyView()
+                    }
                     StockListRow(stock: $item)
                 }
+                .listRowInsets(EdgeInsets())
+                .frame(height: 80)
             }
             .listStyle(.plain)
             .navigationTitle("Stock List")

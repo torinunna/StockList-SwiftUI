@@ -52,6 +52,7 @@ struct StockListRow: View {
 struct StockListRow_Previews: PreviewProvider {
     static var previews: some View {
         StockListRow(stock: .constant(StockModel.list[0]))
+            .previewLayout(.fixed(width: 390, height: 80))
             .preferredColorScheme(.dark)
     }
 }

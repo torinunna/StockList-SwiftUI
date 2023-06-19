@@ -13,6 +13,8 @@ struct StockDetailView: View {
     
     var body: some View {
         VStack(spacing: 30) {
+            Text("# of My Favorites: \(4)")
+                .font(.system(size: 20, weight: .bold))
             Image(stock.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -22,6 +24,17 @@ struct StockDetailView: View {
             Text("\(stock.price) 원")
                 .font(.system(size: 20, weight: .bold))
                 .foregroundColor(stock.diff > 0 ? .red : .blue)
+            
+            Button {
+                stock.isFavorite.toggle()
+            } label: {
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .renderingMode(.template)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(stock.isFavorite ? .white : .gray)
+            }
         }
     }
 }

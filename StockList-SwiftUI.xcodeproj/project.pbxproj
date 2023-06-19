@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		863F5A372A40400A00CD6E12 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863F5A362A40400A00CD6E12 /* StockListViewModel.swift */; };
 		8648C13F2A3D5FB900DC8271 /* StockList_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8648C13E2A3D5FB900DC8271 /* StockList_SwiftUIApp.swift */; };
 		8648C1432A3D5FBB00DC8271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8648C1422A3D5FBB00DC8271 /* Assets.xcassets */; };
 		8648C1462A3D5FBB00DC8271 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8648C1452A3D5FBB00DC8271 /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		863F5A362A40400A00CD6E12 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		8648C13B2A3D5FB900DC8271 /* StockList-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StockList-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8648C13E2A3D5FB900DC8271 /* StockList_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockList_SwiftUIApp.swift; sourceTree = "<group>"; };
 		8648C1422A3D5FBB00DC8271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				8648C13E2A3D5FB900DC8271 /* StockList_SwiftUIApp.swift */,
 				8648C14E2A3D60B300DC8271 /* StockListView.swift */,
+				863F5A362A40400A00CD6E12 /* StockListViewModel.swift */,
 				8648C1702A3EB66A00DC8271 /* StockDetailView.swift */,
 				8648C1502A3D61C600DC8271 /* StockListRow.swift */,
 				8648C14C2A3D608000DC8271 /* StockModel.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8648C14F2A3D60B300DC8271 /* StockListView.swift in Sources */,
+				863F5A372A40400A00CD6E12 /* StockListViewModel.swift in Sources */,
 				8648C1712A3EB66A00DC8271 /* StockDetailView.swift in Sources */,
 				8648C1512A3D61C600DC8271 /* StockListRow.swift in Sources */,
 				8648C13F2A3D5FB900DC8271 /* StockList_SwiftUIApp.swift in Sources */,

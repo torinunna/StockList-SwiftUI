@@ -16,7 +16,7 @@ struct StockListView: View {
             List($vm.models) { $item in
                 ZStack {
                     NavigationLink {
-                        StockDetailView(stock: $item)
+                        StockDetailView(viewModel: vm, stock: $item)
                     } label: {
                         EmptyView()
                     }

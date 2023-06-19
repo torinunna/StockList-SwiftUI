@@ -9,11 +9,12 @@ import SwiftUI
 
 struct StockDetailView: View {
     
+    @ObservedObject var viewModel: StockListViewModel
     @Binding var stock: StockModel
     
     var body: some View {
         VStack(spacing: 30) {
-            Text("# of My Favorites: \(4)")
+            Text("# of My Favorites: \(viewModel.numOfFavorites)")
                 .font(.system(size: 20, weight: .bold))
             Image(stock.imageName)
                 .resizable()
@@ -41,7 +42,8 @@ struct StockDetailView: View {
 
 struct StockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        StockDetailView(stock: .constant(StockModel.list[0]))
+        StockDetailView(viewModel: StockListViewModel(),
+                        stock: .constant(StockModel.list[0]))
             .preferredColorScheme(.dark)
     }
 }
